@@ -39,7 +39,7 @@ export const dummyMessageSend = {
   sender: 11,
   receiver: 12,
   time: new Date('2021-08-11 10:24:50'),
-  messageContent: `오 ㄱㄱㄱ 좋습니다. 한 3단계정도에 소고기 추가해서 먹읍시다. 
+  messageContent: `오 좋습니다. 한 3단계정도에 소고기 추가해서 먹읍시다. 
       어디서 시킬까요?`,
 };
   
@@ -168,8 +168,8 @@ export const Chats: ChatType[] = [
     authorId: '001',
     content: `오늘 논의하기로 한 사용자 기능에 대해서 회의를 진행하고자 합니다.  다들 10시 반 어떠신가요? `,
     pTag: [
-      { id: '0', order: 0, personId: 1, cardOrder: 0 },
-      { id: '1', order: 1, personId: 0, cardOrder: 0 },
+      { id: '0', order: 0, personId: 12, cardOrder: 0 },
+      { id: '1', order: 1, personId: 11, cardOrder: 0 },
     ],
     hTag: [{ id: '0', order: 0, name: '기획', color: ColorEnum.GREEN, cardOrder: 0 }],
     isCard: true,
@@ -197,7 +197,7 @@ export const Chats: ChatType[] = [
     time: new Date('2021-08-12 11:58:30'),
     authorId: '002',
     content: `사용자 로그인 화면, 회원가입 화면이랑 마이페이지 부분 디자인 필요할 것 같습니다.`,
-    pTag: [{ id: '2', order: 2, personId: 0, cardOrder: 0 }],
+    pTag: [{ id: '2', order: 2, personId: 11, cardOrder: 0 }],
     hTag: [{ id: '2', order: 0, name: '디자인', color: ColorEnum.YELLOW, cardOrder: 0 }],
     isCard: true,
     progress: ProgressEnum.INPROGRESS,
@@ -224,8 +224,8 @@ export const Chats: ChatType[] = [
     authorId: '002',
     content: `디비에 사용자 정보 넣기로 한거 그때 컬럼을id, password로 하고 다른 정보는 어떻게할까요`,
     pTag: [
-      { id: '2', order: 2, personId: 0, cardOrder: 2 },
-      { id: '0', order: 0, personId: 1, cardOrder: 1 },
+      { id: '2', order: 2, personId: 11, cardOrder: 2 },
+      { id: '0', order: 0, personId: 12, cardOrder: 1 },
     ],
     hTag: [{ id: '2', order: 0, name: '디자인', color: ColorEnum.YELLOW, cardOrder: 2 }],
     isCard: true,
