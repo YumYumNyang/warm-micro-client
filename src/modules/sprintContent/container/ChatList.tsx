@@ -34,12 +34,14 @@ const ChatList = ({ chatIdList, sprint, onShowThreads }: ChatsProps) => {
             sprint?.title
           }`}
         />
-        <SubmitBtn onClick={() => setShow(true)} show={value.length > 0}>
-          
-          
+        <SubmitBtn
+          onClick={() => {
+            setShow(true);
+            setValue('');
+          }}
+          show={value.length > 0}
+        >
           SEND
-        
-        
         </SubmitBtn>
       </InputContainer>
     </ChatsContainer>

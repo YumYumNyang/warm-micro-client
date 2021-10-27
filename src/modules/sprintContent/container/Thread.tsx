@@ -27,7 +27,7 @@ const Thread = ({ chatId, showThread }: ThreadProps) => {
         <Chat>
           <Author authorId={chatInfo.authorId} time={chatInfo.time} />
           <Content>{chatInfo.content}</Content>
-          <ThreadBtn>{show ? threadIds?.threads.length:'1' }개의 답글</ThreadBtn>
+          <ThreadBtn>{show ? threadIds?.threads.length : '1'}개의 답글</ThreadBtn>
         </Chat>
       )}
       <ThreadContainer>
@@ -48,7 +48,13 @@ const Thread = ({ chatId, showThread }: ThreadProps) => {
           onChange={(e) => setValue(e.target.value)}
           placeholder={`leave thread`}
         />
-        <SubmitBtn onClick={() => setShow(true)} show={value.length > 0}>
+        <SubmitBtn
+          onClick={() => {
+            setShow(true);
+            setValue('');
+          }}
+          show={value.length > 0}
+        >
           SEND
         </SubmitBtn>
       </InputContainer>
